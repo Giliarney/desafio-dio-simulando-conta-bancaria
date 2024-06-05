@@ -1,8 +1,5 @@
 # desafio-dio-simulando-conta-bancaria
 ## Python
-www.dio.me
-
-#### Autores
 
 ## Sintaxe - Desafio Conta Bnacária
 
