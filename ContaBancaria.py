@@ -1,4 +1,5 @@
 import getpass
+import time
 
 def cadastrar():
     #Lista para armanzenar os cadastros dos usuarios
@@ -111,6 +112,13 @@ usuario = None
 
 #loop para caso o usuario digite algum opcao nao aceita pelo sistema, ele solicita que o usuario que digite novamente
 while True:
+    idade_do_usuario = int(input("Por favor informe sua idade: "))
+    if idade_do_usuario < 18:
+        print("Você não tem idade suficiente para criar uma conta")
+        break
+    else:
+        print("Redirecionando para página incial...")
+        time.sleep(2)
     print('\nSeja Bem-Vindo ao banco DIO!')
     print('============================')
     print('''
@@ -142,7 +150,3 @@ Sua conta é: {usuario["conta"]}
             print("Opção inválida, por favor responda 'Sim' ou 'Nao'.")
     else:
         print("Opção inválida, escolha uma das opções fornecidas!\n")
-
-    
-
-
